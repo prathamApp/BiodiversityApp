@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pratham.biodiversity.custom.UnSwippableSlidingPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_sliding_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.MainActivity"
+    tools:openDrawer="start">
+
+    <include layout="@layout/main_navigation_drawer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/ll_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_menu_darkgreen_48dp"
+                android:layout_weight="0.1"/>
+
+            <EditText
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/roundbuttondarkgreen"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_right_white_24dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_white_24dp"
+                android:hint="Search"
+                android:padding="@dimen/_10sdp"
+                android:textColorHint="@color/white"
+                android:layout_weight="0.8"/>
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:focusable="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/icon_filter"
+                android:layout_weight="0.1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_nav"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_species"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_category"
+                android:layout_marginBottom="@dimen/_5sdp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Main content -->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimaryDark"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_navigation_menu" />
+        </FrameLayout>
+    </RelativeLayout>
+</com.pratham.biodiversity.custom.UnSwippableSlidingPanelLayout>

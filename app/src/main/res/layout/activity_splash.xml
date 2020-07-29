@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.splash.SplashActivity"
+    android:layout_gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imgtop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:src="@drawable/intro_part_one"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIODIVERSITY"
+        android:layout_below="@+id/imgtop"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_35sdp"
+        android:textColor="@color/colorPrimary"/>
+<!--
+    <ImageView
+        android:id="@+id/imgmiddle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/biodiversity"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/_200sdp"/>
+-->
+
+    <ImageView
+        android:id="@+id/imgbottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:src="@drawable/intro_part_one_flip"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

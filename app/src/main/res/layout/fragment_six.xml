@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNewSpecie.Fragment_QuestionSix">
+
+    <RelativeLayout
+        android:id="@+id/rl_sixfrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Describe Shape and size."
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_below="@+id/stateSpinner"
+            android:gravity="center"/>
+
+        <GridView
+            android:id="@+id/gridviewSize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@drawable/roundblackborder"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:animateLayoutChanges="true"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/tv_selectedItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gridviewSize"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="No Size Choosen"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</FrameLayout>

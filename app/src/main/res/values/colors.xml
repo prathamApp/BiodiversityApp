@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#81c784</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
+    <color name="colorAccent">#CC6291</color>
+
+    <color name="green50">#e8f5e9</color>
+    <color name="green100">#c8e6c9</color>
+    <color name="green200">#a5d6a7</color>
+    <color name="green300">#81c784</color>
+    <color name="green400">#66bb6a</color>
+    <color name="green500">#4caf50</color>
+    <color name="green600">#43a047</color>
+    <color name="green700">#388e3c</color>
+    <color name="green800">#2e7d32</color>
+    <color name="green900">#1b5e20</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#D7C8C8C8</color>
+    <color name="dot_dark_screen2">#D7C8C8C8</color>
+    <color name="dot_dark_screen3">#D7C8C8C8</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#474747</color>
+    <color name="dot_light_screen2">#474747</color>
+    <color name="dot_light_screen3">#474747</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+
+
+    <item name="lightgreena200" type="color">#b2ff59</item>
+    <item name="teal100" type="color">#b2dfdb</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="lightblue" type="color">#b2ebf2</item>
+    <item name="teal200" type="color">#80cbc4</item>
+    <item name="greena200" type="color">#69f0ae</item>
+    <item name="teala200" type="color">#64ffda</item>
+    <item name="lightred" type="color">#EA6F6F</item>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="grey">#D7C8C8C8</color>
+    <color name="blue">#2979ff</color>
+    <color name="brown">#5d4037</color>
+    <color name="yellow">#ffff00</color>
+    <color name="transparent">#00000000</color>
+
+
+    <integer-array name="androidcolors">
+        <item>@color/lightgreena200</item>
+        <item>@color/greena200</item>
+        <item>@color/teala200</item>
+        <item>@color/orange</item>
+        <item>@color/green</item>
+        <item>@color/lightblue</item>
+        <item>@color/green600</item>
+        <item>@color/darkgreen</item>
+    </integer-array>
+
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_primary_color">#00b47c</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+    <color name="stpi_default_text_color">#000</color>
+</resources>
